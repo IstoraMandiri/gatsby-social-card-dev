@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import SocialCards from "../../plugins/social-cards/components/socialCards"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -19,9 +20,10 @@ const Layout = ({ location, title, children }) => {
       </Link>
     )
   }
-
   return (
-    <div className="global-wrapper" data-is-root-path={isRootPath}>
+    <>
+      <SocialCards data={title} />
+      <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
@@ -30,6 +32,7 @@ const Layout = ({ location, title, children }) => {
         <a href="https://www.gatsbyjs.com">Gatsby</a>
       </footer>
     </div>
+    </>
   )
 }
 

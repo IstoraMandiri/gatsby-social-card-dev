@@ -12,6 +12,7 @@ module.exports = {
     },
   },
   plugins: [
+    `social-cards`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
