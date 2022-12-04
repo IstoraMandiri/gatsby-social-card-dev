@@ -2,7 +2,9 @@ import * as React from "react"
 import { Link } from "gatsby"
 import SocialCards from "../../plugins/social-cards/components/socialCards"
 
-const Layout = ({ location, title, children }) => {
+const Layout = (props) => {
+  console.log('props', props)
+  const { location, title, children } = props;
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   let header
@@ -22,7 +24,7 @@ const Layout = ({ location, title, children }) => {
   }
   return (
     <>
-      <SocialCards data={title} />
+      <SocialCards data={{title, location}} />
       <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">{header}</header>
       <main>{children}</main>

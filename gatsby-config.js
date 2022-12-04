@@ -12,6 +12,7 @@ module.exports = {
     },
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `social-cards`,
     `gatsby-plugin-image`,
     {

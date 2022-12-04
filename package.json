@@ -8,10 +8,12 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "crypto-js": "^4.1.1",
     "gatsby": "^4.24.7",
     "gatsby-plugin-feed": "^4.24.0",
     "gatsby-plugin-image": "^2.24.0",
     "gatsby-plugin-manifest": "^4.24.0",
+    "gatsby-plugin-react-helmet": "^5.24.0",
     "gatsby-plugin-sharp": "^4.24.0",
     "gatsby-remark-copy-linked-files": "^5.24.0",
     "gatsby-remark-images": "^6.24.0",
@@ -25,6 +27,7 @@
     "puppeteer": "^19.3.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-helmet": "^6.1.0",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75"
   },
